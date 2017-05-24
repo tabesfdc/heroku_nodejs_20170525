@@ -5,12 +5,13 @@
   },
   "env": {
     "APP_KEY": {
-      "value": ""
+      "value": "Heroku"
     }
   },
-  "formation": {  },
-  "addons": [ "heroku-postgresql:hobby-dev" ],
+  "addons": [
+    "heroku-postgresql:hobby-dev"
+   ],
   "buildpacks": [
-    { "url": "heroku/nodejs” }
+    { "url": "heroku/nodejs? }
   ]
 }
