@@ -1,0 +1,17 @@
+{
+  "name": "heroku-nodejs-0525",
+  "scripts": {
+    "postdeploy": "sequelize db:migrate"
+  },
+  "env": {
+    "APP_KEY": {
+      "value": "Heroku"
+    }
+  },
+  "addons": [
+    "heroku-postgresql:hobby-dev"
+   ],
+  "buildpacks": [
+    { "url": "heroku/nodejs" }
+  ]
+}
